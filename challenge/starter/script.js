@@ -23,3 +23,4 @@ updateColorCoding();
 
 // Make textareas draggable using jQuery UI
 $("textarea").draggable();
+
