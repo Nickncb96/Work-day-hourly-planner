@@ -57,3 +57,24 @@ function updateColorCoding() {
       });
     }
     
+    // Function to load events from local storage
+function loadEvents() {
+    // Retrieve events from local storage
+    let savedEvents = JSON.parse(localStorage.getItem("events")) || [];
+  
+    if (savedEvents) {
+      // Loop through saved events and display them in corresponding timeblocks
+      for (let i = 0; i < savedEvents.length; i++) {
+        let eventDay = savedEvents[i].day;
+        let eventHour = savedEvents[i].hour;
+        let eventText = savedEvents[i].text;
+  
+        $(".time-block").each(function () {
+          if (parseInt($(this).find(".hour").text()) === eventHour && (dayjs().day() || 7) === eventDay) {
+            $(this).find("textarea").val(eventText);
+          }
+        });
+      }
+    }
+  }
+  
