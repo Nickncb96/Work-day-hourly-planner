@@ -15,3 +15,11 @@ $(document).ready(function () {
       $(".container").append(timeBlock);
     }
 
+// Load events from local storage
+loadEvents();
+
+// Add logic for color-coding timeblocks (past, present, future)
+updateColorCoding();
+
+// Make textareas draggable using jQuery UI
+$("textarea").draggable();
