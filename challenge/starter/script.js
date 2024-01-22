@@ -14,51 +14,51 @@ $(document).ready(function () {
   
       $(".container").append(timeBlock);
     }
-
-// Load events from local storage
-loadEvents();
-
-// Add logic for color-coding timeblocks (past, present, future)
-updateColorCoding();
-
-// Make textareas draggable using jQuery UI
-$("textarea").draggable();
-
-// Load events from local storage
-loadEvents();
-
-// Add logic for color-coding timeblocks (past, present, future)
-updateColorCoding();
-
-// Make textareas draggable using jQuery UI
-$("textarea").draggable();
-
-  // Save the event to local storage
-  saveEvent(eventDay, eventHour, eventText);
-});
-});
-
-// Function to update color coding of timeblocks
-function updateColorCoding() {
+  
+    // Load events from local storage
+    loadEvents();
+  
+    // Add logic for color-coding timeblocks (past, present, future)
+    updateColorCoding();
+  
+    // Make textareas draggable using jQuery UI
+    $("textarea").draggable();
+  
+   // Load events from local storage
+    loadEvents();
+  
+    // Add logic for color-coding timeblocks (past, present, future)
+    updateColorCoding();
+  
+    // Make textareas draggable using jQuery UI
+    $("textarea").draggable();
+  
+      // Save the event to local storage
+      saveEvent(eventDay, eventHour, eventText);
+    });
+  });
+  
+  // Function to update color coding of timeblocks
+  function updateColorCoding() {
     let currentHour = dayjs().hour();
     let currentDay = dayjs().day() || 7; // Adjust for Sunday
   
     $(".time-block").each(function () {
-        let blockHour = parseInt($(this).find(".hour").text());
-        let blockDay = parseInt($(this).find(".hour").attr("data-day"));
-    
-        if (blockDay < currentDay || (blockDay === currentDay && blockHour < currentHour)) {
-          $(this).removeClass("present future").addClass("past");
-        } else if (blockDay === currentDay && blockHour === currentHour) {
-          $(this).removeClass("past future").addClass("present");
-        } else {
-          $(this).removeClass("past present").addClass("future");
-        }
-      });
-    }
-    
-    // Function to load events from local storage
-function loadEvents() {
+      let blockHour = parseInt($(this).find(".hour").text());
+      let blockDay = parseInt($(this).find(".hour").attr("data-day"));
+  
+      if (blockDay < currentDay || (blockDay === currentDay && blockHour < currentHour)) {
+        $(this).removeClass("present future").addClass("past");
+      } else if (blockDay === currentDay && blockHour === currentHour) {
+        $(this).removeClass("past future").addClass("present");
+      } else {
+        $(this).removeClass("past present").addClass("future");
+      }
+    });
+  }
+  
+  // Function to load events from local storage
+  function loadEvents() {
     // Retrieve events from local storage
     let savedEvents = JSON.parse(localStorage.getItem("events")) || [];
   
@@ -79,7 +79,7 @@ function loadEvents() {
   }
   
   // Function to save events to local storage
-function saveEvent(day, hour, text) {
+  function saveEvent(day, hour, text) {
     // Retrieve existing events from local storage
     let savedEvents = JSON.parse(localStorage.getItem("events")) || [];
   
@@ -94,6 +94,7 @@ function saveEvent(day, hour, text) {
       savedEvents.push({ day, hour, text });
     }
   
-      // Save updated events to local storage
-  localStorage.setItem("events", JSON.stringify(savedEvents));
-}
+    // Save updated events to local storage
+    localStorage.setItem("events", JSON.stringify(savedEvents));
+  }
+  
