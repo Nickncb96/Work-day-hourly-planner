@@ -1,9 +1,11 @@
+/* styling for the body */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
+/* Styling for textareas */
 textarea {
   background: transparent;
   border: none;
@@ -13,6 +15,7 @@ textarea {
   padding: 10px;
 }
 
+/* Styling for the header section */
 header {
   text-align: center;
   background-color: transparent;
@@ -22,42 +25,50 @@ header {
   padding: 60px;
 }
 
+/* Styling for description */
 .description {
   white-space: pre-wrap;
 }
 
+/* Styling for time blocks */
 .time-block {
   text-align: center;
   border-radius: 15px;
 }
 
+/* Styling for rows */
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
 }
 
+/* Styling for hours */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
+/* Styling for past time blocks, Red color for past time blocks */
 .past {
-  background-color: #d3d3d3;
+  background-color: #ff6961; 
   color: white;
 }
 
+/* Styling for present time blocks, Orange color for present time blocks */
 .present {
-  background-color: #ff6961;
+  background-color: #ffa500; 
   color: white;
 }
 
+/* Styling for future time blocks, Green color for future time blocks */
 .future {
-  background-color: #77dd77;
+  background-color: #77dd77; 
   color: white;
 }
 
+/* Styling for the save button */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -66,7 +77,11 @@ header {
   color: white;
 }
 
+/* Hover effect for the save button icon */
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+
+
