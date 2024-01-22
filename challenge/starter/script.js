@@ -24,14 +24,12 @@ $(document).ready(function () {
     // Make textareas draggable using jQuery UI
     $("textarea").draggable();
   
-   // Load events from local storage
-    loadEvents();
-  
-    // Add logic for color-coding timeblocks (past, present, future)
-    updateColorCoding();
-  
-    // Make textareas draggable using jQuery UI
-    $("textarea").draggable();
+    // Save button click event
+    $(".saveBtn").on("click", function () {
+      // Get the text value, hour, and day of the clicked save button's parent timeblock
+      let eventText = $(this).siblings("textarea").val();
+      let eventHour = parseInt($(this).siblings(".hour").text());
+      let eventDay = dayjs().day() || 7; // Adjust for Sunday
   
       // Save the event to local storage
       saveEvent(eventDay, eventHour, eventText);
@@ -97,4 +95,3 @@ $(document).ready(function () {
     // Save updated events to local storage
     localStorage.setItem("events", JSON.stringify(savedEvents));
   }
-  
