@@ -50,19 +50,19 @@ header {
   border-top: 1px dashed #000000;
 }
 
-/* Styling for past time blocks, Red color for past time blocks */
+/* Styling for past time blocks, Red colour for past time blocks */
 .past {
   background-color: #ff6961; 
   color: white;
 }
 
-/* Styling for present time blocks, Orange color for present time blocks */
+/* Styling for present time blocks, Orange colour for present time blocks */
 .present {
   background-color: #ffa500; 
   color: white;
 }
 
-/* Styling for future time blocks, Green color for future time blocks */
+/* Styling for future time blocks, Green colour for future time blocks */
 .future {
   background-color: #77dd77; 
   color: white;
