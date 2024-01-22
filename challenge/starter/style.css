@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: #333333; /* Dark background color */
+  background-color: #1b1b1b; /* Dark background color */
   color: #dcdcdc; /* Light text color */
 }
 
@@ -46,8 +46,8 @@ textarea {
 /* Styling for the header section */
 header {
   text-align: center;
-  background-color: #1b1b1b; /* Dark background color for the header */
-  color: #dcdcdc; /* Light text color */
+  background-color: #ffcc00; /* Bright header color */
+  color: #1b1b1b; /* Dark text color for contrast */
   border-radius: 15px;
   border: 2px solid #333; /* Dark border */
   padding: 30px;
@@ -62,7 +62,7 @@ header {
 
 /* Styling for h1 and h2 tags within the header */
 header h1, header h2 {
-  color: #ffcc00; /* Accent color for headings */
+  color: #1b1b1b; /* Dark text color for headings */
 }
 
 /* Additional styling for the current day */
@@ -73,7 +73,7 @@ header h1, header h2 {
 
 /* Hover effect for header */
 header:hover {
-  background-color: #333; /* Darker background on hover */
+  background-color: #ff9900; /* Darker background on hover for a subtle effect */
   transition: background-color 0.3s ease-in-out; /* Smooth transition */
 }
 
