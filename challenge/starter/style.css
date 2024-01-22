@@ -3,6 +3,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: #333333; /* Dark background color */
+  color: #dcdcdc; /* Light text color */
 }
 
 /* Styling for textareas */
@@ -17,8 +19,7 @@ textarea {
 
 /* Additional styling for the current hour */
 .present {
-  background-color: #ffa500;
-  /* Orange color for present time blocks */
+  background-color: #ffa500; /* Orange color for present time blocks */
   color: white;
   font-weight: bold;
 }
@@ -45,30 +46,47 @@ textarea {
 /* Styling for the header section */
 header {
   text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-  padding: 60px;
+  background-color: #1b1b1b; /* Dark background color for the header */
+  color: #dcdcdc; /* Light text color */
+  border-radius: 15px;
+  border: 2px solid #333; /* Dark border */
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
 }
 
 /* Styling for description */
 .description {
   white-space: pre-wrap;
+  font-size: 18px;
+}
+
+/* Styling for h1 and h2 tags within the header */
+header h1, header h2 {
+  color: #ffcc00; /* Accent color for headings */
+}
+
+/* Additional styling for the current day */
+#currentDay {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Hover effect for header */
+header:hover {
+  background-color: #333; /* Darker background on hover */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition */
 }
 
 /* Styling for time blocks */
 .time-block {
   text-align: center;
   border-radius: 15px;
-  transition: border 0.3s ease-in-out;
-  /* Added transition for smoother effect */
+  transition: border 0.3s ease-in-out; /* Added transition for smoother effect */
 }
 
 /* Add hovering border effect */
 .time-block:hover {
-  border: 2px solid #06aed5;
-  /* Change the color to your preferred color */
+  border: 2px solid #06aed5; /* Change the color to your preferred color */
 }
 
 /* Styling for rows */
@@ -87,22 +105,19 @@ header {
 
 /* Styling for past time blocks */
 .past {
-  background-color: #ff6961;
-  /* Red color for past time blocks */
+  background-color: #ff6961; /* Red color for past time blocks */
   color: white;
 }
 
 /* Styling for present time blocks */
 .present {
-  background-color: #ffa500;
-  /* Orange color for present time blocks */
+  background-color: #ffa500; /* Orange color for present time blocks */
   color: white;
 }
 
 /* Styling for future time blocks */
 .future {
-  background-color: #77dd77;
-  /* Green color for future time blocks */
+  background-color: #77dd77; /* Green color for future time blocks */
   color: white;
 }
 
