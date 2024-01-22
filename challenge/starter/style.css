@@ -1,4 +1,4 @@
-/* styling for the body */
+/* Global styling for the body */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -13,6 +13,33 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+}
+
+/* Additional styling for the current hour */
+.present {
+  background-color: #ffa500;
+  /* Orange color for present time blocks */
+  color: white;
+  font-weight: bold;
+}
+
+/* Styling for the tooltip */
+.saveBtn::after {
+  content: attr(title);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  display: none;
+}
+
+/* Show tooltip on hover */
+.saveBtn:hover::after {
+  display: block;
 }
 
 /* Styling for the header section */
@@ -50,21 +77,24 @@ header {
   border-top: 1px dashed #000000;
 }
 
-/* Styling for past time blocks, Red colour for past time blocks */
+/* Styling for past time blocks */
 .past {
-  background-color: #ff6961; 
+  background-color: #ff6961;
+  /* Red color for past time blocks */
   color: white;
 }
 
-/* Styling for present time blocks, Orange colour for present time blocks */
+/* Styling for present time blocks */
 .present {
-  background-color: #ffa500; 
+  background-color: #ffa500;
+  /* Orange color for present time blocks */
   color: white;
 }
 
-/* Styling for future time blocks, Green colour for future time blocks */
+/* Styling for future time blocks */
 .future {
-  background-color: #77dd77; 
+  background-color: #77dd77;
+  /* Green color for future time blocks */
   color: white;
 }
 
@@ -82,6 +112,3 @@ header {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
-
-
-
