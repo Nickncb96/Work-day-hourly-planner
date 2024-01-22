@@ -43,3 +43,17 @@ function updateColorCoding() {
     let currentHour = dayjs().hour();
     let currentDay = dayjs().day() || 7; // Adjust for Sunday
   
+    $(".time-block").each(function () {
+        let blockHour = parseInt($(this).find(".hour").text());
+        let blockDay = parseInt($(this).find(".hour").attr("data-day"));
+    
+        if (blockDay < currentDay || (blockDay === currentDay && blockHour < currentHour)) {
+          $(this).removeClass("present future").addClass("past");
+        } else if (blockDay === currentDay && blockHour === currentHour) {
+          $(this).removeClass("past future").addClass("present");
+        } else {
+          $(this).removeClass("past present").addClass("future");
+        }
+      });
+    }
+    
