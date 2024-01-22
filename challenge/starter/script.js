@@ -24,3 +24,22 @@ updateColorCoding();
 // Make textareas draggable using jQuery UI
 $("textarea").draggable();
 
+// Load events from local storage
+loadEvents();
+
+// Add logic for color-coding timeblocks (past, present, future)
+updateColorCoding();
+
+// Make textareas draggable using jQuery UI
+$("textarea").draggable();
+
+  // Save the event to local storage
+  saveEvent(eventDay, eventHour, eventText);
+});
+});
+
+// Function to update color coding of timeblocks
+function updateColorCoding() {
+    let currentHour = dayjs().hour();
+    let currentDay = dayjs().day() || 7; // Adjust for Sunday
+  
