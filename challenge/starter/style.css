@@ -61,6 +61,14 @@ header {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  transition: border 0.3s ease-in-out;
+  /* Added transition for smoother effect */
+}
+
+/* Add hovering border effect */
+.time-block:hover {
+  border: 2px solid #06aed5;
+  /* Change the color to your preferred color */
 }
 
 /* Styling for rows */
