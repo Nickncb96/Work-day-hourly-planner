@@ -78,3 +78,22 @@ function loadEvents() {
     }
   }
   
+  // Function to save events to local storage
+function saveEvent(day, hour, text) {
+    // Retrieve existing events from local storage
+    let savedEvents = JSON.parse(localStorage.getItem("events")) || [];
+  
+    // Check if there's already an event saved for the current day and hour
+    let existingEventIndex = savedEvents.findIndex((event) => event.day === day && event.hour === hour);
+  
+    if (existingEventIndex !== -1) {
+      // Update existing event
+      savedEvents[existingEventIndex].text = text;
+    } else {
+      // Add new event
+      savedEvents.push({ day, hour, text });
+    }
+  
+      // Save updated events to local storage
+  localStorage.setItem("events", JSON.stringify(savedEvents));
+}
