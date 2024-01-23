@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: #262d6d; 
+  background-color: #262d6d;
   color: #dcdcdc;
 }
 
@@ -19,7 +19,7 @@ textarea {
 
 /* Additional styling for the current hour */
 .present {
-  background-color: #ffa500; 
+  background-color: #ffa500;
   color: white;
   font-weight: bold;
 }
@@ -46,12 +46,12 @@ textarea {
 /* Styling for the header section */
 header {
   text-align: center;
-  background-color: #ffcc00; 
-  color: #1b1b1b; 
+  background-color: #ffcc00;
+  color: #1b1b1b;
   border-radius: 15px;
-  border: 2px solid #333; 
+  border: 2px solid #333;
   padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Styling for description */
@@ -61,8 +61,9 @@ header {
 }
 
 /* Styling for h1 and h2 tags within the header */
-header h1, header h2 {
-  color: #1b1b1b; 
+header h1,
+header h2 {
+  color: #1b1b1b;
 }
 
 /* Additional styling for the current day */
@@ -73,20 +74,20 @@ header h1, header h2 {
 
 /* Styling Hover effect for header */
 header:hover {
-  background-color: #ff9900; 
-  transition: background-color 0.3s ease-in-out; 
+  background-color: #ff9900;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* Styling for time blocks */
 .time-block {
   text-align: center;
   border-radius: 15px;
-  transition: border 0.3s ease-in-out; 
+  transition: border 0.3s ease-in-out;
 }
 
 /* hovering border effect */
 .time-block:hover {
-  border: 2px solid #06aed5; 
+  border: 2px solid #06aed5;
 }
 
 /* Styling for rows */
@@ -105,19 +106,19 @@ header:hover {
 
 /* Styling for past time blocks */
 .past {
-  background-color: #a4231c; 
+  background-color: #a4231c;
   color: white;
 }
 
 /* Styling for present time blocks */
 .present {
-  background-color: #ffa500; 
+  background-color: #ffa500;
   color: white;
 }
 
 /* Styling for future time blocks */
 .future {
-  background-color: #77dd77; 
+  background-color: #77dd77;
   color: white;
 }
 
