@@ -1,4 +1,4 @@
-/* Global styling for the body */
+/* styling for the body */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -38,7 +38,7 @@ textarea {
   display: none;
 }
 
-/* Show tooltip on hover */
+/* tooltip on hover */
 .saveBtn:hover::after {
   display: block;
 }
@@ -71,7 +71,7 @@ header h1, header h2 {
   margin-top: 10px;
 }
 
-/* Hover effect for header */
+/* Styling Hover effect for header */
 header:hover {
   background-color: #ff9900; 
   transition: background-color 0.3s ease-in-out; 
@@ -84,7 +84,7 @@ header:hover {
   transition: border 0.3s ease-in-out; 
 }
 
-/* Add hovering border effect */
+/* hovering border effect */
 .time-block:hover {
   border: 2px solid #06aed5; 
 }
