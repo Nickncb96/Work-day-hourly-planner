@@ -136,3 +136,27 @@ header:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+/* Media Query for Laptops and PCs */
+@media only screen and (min-width: 1024px) {
+
+  body {
+    font-size: 18px;
+  }
+
+}
+
+/* Media Query for Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+
+}
+
+/* Media Query for Mobile Phones */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}

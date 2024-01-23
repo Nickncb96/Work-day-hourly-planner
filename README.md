@@ -71,12 +71,12 @@ Developed using HTML, CSS, jQuery, and the Day.js library, this application prov
    - Google Fonts: - Open Sans - (https://fonts.googleapis.com/css?family=Open+Sans&display=swap)
 
 ~ Deployment:
- - Access the Work Day Scheduler live at: URL: 
+ - Access the Work Day Scheduler live at: URL: https://nickncb96.github.io/Work-day-hourly-planner/
 
 
 ~ Repository
 
- - Explore the GitHub repository for the Work Day Scheduler at: URL: 
+ - Explore the GitHub repository for the Work Day Scheduler at: URL: https://github.com/Nickncb96/Work-day-hourly-planner.git
 
 ~ Repository Contents:
 
@@ -92,7 +92,7 @@ Developed using HTML, CSS, jQuery, and the Day.js library, this application prov
  - User Interface Style: A clean and polished interface closely resembling the mock-up functionality.
 
 
-~ Screenshot image: 
+~ Screenshot image: ![Alt text](<images/Work Day Scheduler-screenshot.jpg>)
 
 
                                                              Thank you for reviewing the Work Day Scheduler! 
