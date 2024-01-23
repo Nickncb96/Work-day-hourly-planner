@@ -2,7 +2,7 @@ $(document).ready(function () {
   // Display current day at the top of the calendar
   $("#currentDay").text(dayjs().format("dddd, MMMM D"));
 
-  // Add timeblocks for standard business hours (Monday to Friday, 9 am to 5 pm)
+  // timeblocks for standard business hours (Monday to Friday, 9 am to 5 pm)
   for (let hour = 9; hour <= 17; hour++) {
     let timeBlock = $("<div>").addClass("row time-block");
     timeBlock.append($("<div>").addClass("col-md-1 hour").attr("data-day", dayjs().day() || 7).text(dayjs().hour(hour).format("h A")));
@@ -17,7 +17,7 @@ $(document).ready(function () {
   // Load events from local storage
   loadEvents();
 
-  // Add logic for color-coding timeblocks (past, present, future)
+  // logic for color-coding timeblocks (past, present, future)
   updateColorCoding();
 
   // Make textareas draggable using jQuery UI
@@ -38,7 +38,7 @@ $(document).ready(function () {
 // Function to update color coding of timeblocks
 function updateColorCoding() {
   let currentHour = dayjs().hour();
-  let currentDay = dayjs().day() || 7; // Adjust for Sunday
+  let currentDay = dayjs().day() || 7; // 
 
   $(".time-block").each(function () {
     let blockHour = parseInt($(this).find(".hour").text());
